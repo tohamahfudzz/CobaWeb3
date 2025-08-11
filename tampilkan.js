@@ -25,4 +25,6 @@ async function loadBlockchainData(){
 		document.getElementById('hasil').innerText="metamask tidak ditemukan";
 	}
 }
-window.addEventListener("load",loadBlockchainData);
+
+//window.addEventListener("load",loadBlockchainData);
+document.getElementById('loadBtn').addEventListener("click", loadBlockchainData);
