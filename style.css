@@ -1,0 +1,72 @@
+.background img {
+	position: absolute;
+	z-index: 1;
+	width: 100vw;
+	height: 100vh;
+	padding: 20px;
+	object-fit: cover;
+	box-sizing: border-box;
+}
+
+.inputan{
+	background-image: url('greenLight.png');
+	position: absolute;
+	z-index: 2;
+	background-size: cover;
+			background-position: center;
+			width: 80vw;
+			height: 40vh;
+			left: 50vw;
+	top: 60vh;
+	transform: translate(-50%,-50%);
+
+}
+.inputan form{
+	position: absolute;
+	z-index: 3;
+	left: 40vw;
+	top: 25vh;
+	transform: translate(-50%,-50%);
+	opacity: 0.3;
+
+}
+body{
+	background-color: white;
+}
+
+.flower{
+	position: absolute ;
+	left: 80vw;
+	top: 80vh;
+	transform: translate(-50%,-50%);
+
+	z-index: 4;
+	width: 40vw;
+			height: 40vh;
+			
+			background-size: cover;
+			background-position: center;
+}
+.hidden{
+	display: none;
+}
+#animasi{
+	position: absolute;
+	z-index: 2;
+}
+.animate{
+			animation: animasi 3s
+			steps(3) forwards;
+		}
+
+		@keyframes animasi{
+			0%{background-image: url('flower1.png');
+			}
+	33%{background-image: url('flower2.png');
+			}
+
+				67%{background-image: url('flower3.png');
+			}
+
+			87%{background-image: url('flower4.png');
+		}
