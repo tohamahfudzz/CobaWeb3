@@ -1,9 +1,10 @@
-const flower=document.getElementsByClassName('flower');
-const image=document.getElementById('satu');
-const animasi=document.getElementById('animasi');
+//const flower=document.getElementsByClassName('flower');
+//const image=document.getElementById('satu');
+//const animasi=document.getElementById('animasi');
 const connectBtn=document.getElementById('connectBtn');
 const status=document.getElementById('status');
-flower[0].style.backgroundImage="url('bijiFlower.png')";
+
+//flower[0].style.backgroundImage="url('bijiFlower.png')";
 //flower[0].addEventListener('click',animate);
 
 connectBtn.onclick=async()=>{
@@ -36,8 +37,12 @@ connectBtn.onclick=async()=>{
 };
 
 function animate(){
+	/*
 flower[0].classList.add('animate');
 flower[0].style.backgroundImage="url('flower4.png')";
+
+*/
+	
 // image.classList.add('hidden');	
 // 	animasi.classList.add('animate');
  
@@ -69,4 +74,5 @@ document.getElementsByName("kirim")[0].addEventListener("click", async function(
 document.getElementsByName("lihat")[0].addEventListener("click", async function() {
            
            window.location.href="lihat.html";
+
         });
