@@ -1,4 +1,4 @@
-const contractAddress="0xd35a95A23CC3Ac2fc123f884a3C22CFf91b4d460"
+const contractAddress="0xd35a95A23CC3Ac2fc123f884a3C22CFf91b4d460";
 async function loadABI(){
 	const response=await fetch("ABI.json");
 	return await response.json();
@@ -28,3 +28,4 @@ async function loadBlockchainData(){
 
 //window.addEventListener("load",loadBlockchainData);
 document.getElementById('loadBtn').addEventListener("click", loadBlockchainData);
+
